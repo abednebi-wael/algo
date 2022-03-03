@@ -1,0 +1,22 @@
+ALGORITHM my checkpiont
+VAR
+    nbC : Integer := 0
+    nbW : Integer := 1
+    nbV : Integer := 0
+    C : Char
+BEGIN
+    read (C)
+WHILE (C <> ".") DO
+    nbC = nbC+1
+IF (C in ["A","U","I","E","Y","O","a","u","i","e","y","o"] THEN
+    nbV = nbV+1
+ELSE IF ( C =" ") THEN
+    nbW = nbW+1 
+
+END_IF
+END_WHILE
+ write (nbC)
+ write (nbW)
+ write (nbV)
+
+END
